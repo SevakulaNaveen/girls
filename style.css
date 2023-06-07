@@ -1,0 +1,35 @@
+h1{
+    font-style: italic;
+    color: hotpink;
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    height: 100vh;
+
+    grid-gap: 10px;
+    
+}
+.gallery-item{
+    background-color:lightblue;
+}
+
+
+.gallery-item img{
+    transition: all ease-in-out 500ms;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item img:hover{
+    transform: scale(0.95);
+    opacity: 0.5;
+}
+.gallery-item-9{
+    grid-column: 1/5;
+}
+
